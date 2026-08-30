@@ -1,0 +1,27 @@
+<div class="counter-container">
+  <div class="counter-card">
+    <h1>Counter</h1>
+
+    <div class="counter-value">
+      {{ counter }}
+    </div>
+
+    <div class="counter-actions">
+      <button class="counter-btn decrease" (click)="decrement()">
+        −
+      </button>
+
+      <button class="counter-btn reset" (click)="reset()" [disabled]="counter === 0">
+        Reset
+      </button>
+
+      <button class="counter-btn increase" (click)="increment()">
+        +
+      </button>
+    </div>
+
+    <p class="counter-message">
+      Current count: <strong>{{ counter }}</strong>
+    </p>
+  </div>
+</div>

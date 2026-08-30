@@ -1,0 +1,41 @@
+<main class="home">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Angular Tutorial</h1>
+        <app-counter></app-counter>
+      <input [(ngModel)] = "username">
+      <p>Hello {{username}}</p>
+
+      <p>
+        Learn Angular step by step and build modern web applications.
+      </p>
+
+      <button class="learn-btn">
+        Start Learning
+      </button>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h2>Components</h2>
+      <p>
+        Learn how Angular components work and how to create reusable UI.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h2>Services</h2>
+      <p>
+        Understand how services help you share data and functionality.
+      </p>
+    </div>
+
+    <div class="feature-card">
+      <h2>Routing</h2>
+      <p>
+        Learn how to navigate between different pages in Angular.
+      </p>
+    </div>
+  </section>
+</main>

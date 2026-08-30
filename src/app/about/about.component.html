@@ -1,0 +1,43 @@
+<main class="about">
+  <section class="about-hero">
+
+    <h1>About Angular</h1>
+    <!-- <h1>{{ aboutService.aboutList[0].title }}</h1> -->
+    
+    <p>
+      Angular is a powerful framework for building modern web applications.
+    </p>
+
+  </section>
+
+    <!-- <div class="about-card">
+      <h2>What is Angular?</h2>
+
+      <p>
+        Angular is a TypeScript-based web application framework developed
+        by Google. It provides tools and features for building scalable
+        single-page applications.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h2>Why Learn Angular?</h2>
+
+      <p>
+        Angular provides components, services, dependency injection,
+        routing and many other features that make application development
+        easier and more structured.
+      </p>
+    </div> -->
+
+    <div style="display: flex; gap: 20px">
+      <ng-container *ngFor="let about of aboutData">
+    <section class="about-content">
+      <div class="about-card">
+        <h2>{{ about.title }}</h2>
+        <p>{{ about.desc }}</p>
+      </div>
+    </section>
+  </ng-container>
+    </div>
+</main>

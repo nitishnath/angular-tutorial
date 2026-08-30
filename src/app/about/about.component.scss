@@ -1,0 +1,47 @@
+.about {
+  min-height: calc(100vh - 70px);
+  background: #f5f7fa;
+  padding: 50px 20px;
+}
+
+.about-hero {
+  text-align: center;
+  background: white;
+  padding: 50px 20px;
+
+  h1 {
+    font-size: 42px;
+    color: #222;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #666;
+  }
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  gap: 25px;
+}
+
+.about-card {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  h2 {
+    color: #1976d2;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: #666;
+    line-height: 1.6;
+  }
+}

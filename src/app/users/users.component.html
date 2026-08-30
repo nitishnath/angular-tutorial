@@ -1,0 +1,46 @@
+<main class="users">
+
+  <!-- Page Header -->
+  <section class="users-hero">
+    <h1>Users</h1>
+    <p>
+      Explore the list of users in our Angular application.
+    </p>
+  </section>
+
+  <!-- Users List -->
+  <section class="users-container">
+
+    <div class="users-grid">
+
+      <div class="user-card" *ngFor="let user of users; let i = index">
+
+        <div class="user-avatar">
+          {{ user.name.charAt(0) }}
+        </div>
+
+        <div class="user-details">
+
+          <h2>{{ user.name }}</h2>
+
+          <p class="user-email">
+            {{ user.email }}
+          </p>
+
+          <!-- <p class="user-role">
+            {{ user.role }}
+          </p> -->
+
+        </div>
+
+        <span class="user-number">
+          #{{ i + 1 }}
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
